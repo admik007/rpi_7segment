@@ -1,0 +1,5 @@
+# Copy to config_wifi.py on each Pico. Do not commit real credentials.
+SSID = "NETWORK"
+PASS = "PASSWORD"
+# Firmware URL: http://HOST/firmware/<machine.unique_id() in hex>/
+HOST = "SERVER"
