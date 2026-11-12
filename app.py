@@ -1,5 +1,5 @@
 from machine import Pin, SPI
-import time
+import time, machine, ntptime
 
 # 74HC595 / 4-digit 7-segment display
 MOSI = 11
@@ -20,6 +20,7 @@ SEG8Code = [
 NTP_SYNC_INTERVAL = 6 * 60 * 60
 DISPLAY_REFRESH_MS = 2
 
+rtc=machine.RTC()
 
 class LED_8SEG:
     def __init__(self):
